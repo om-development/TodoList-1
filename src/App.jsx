@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { createHashRouter, RouterProvider } from "react-router"
 import Header from "./components/Header.jsx"
 import Footer from "./components/Footer.jsx"
 import Home from "./pages/Home.jsx"
@@ -14,7 +14,7 @@ function Layout({ children }) {
   )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout><Home /></Layout>,
