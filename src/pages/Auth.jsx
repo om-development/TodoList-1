@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx"
 import Footer from "../components/Footer.jsx"
+//Header
 
 export default function Auth() {
   return (
