@@ -1,8 +1,8 @@
-import { createHashRouter, RouterProvider } from "react-router"
-import Header from "./components/Header.jsx"
-import Footer from "./components/Footer.jsx"
-import Home from "./pages/Home.jsx"
-import Auth from "./pages/Auth.jsx"
+import { createHashRouter, RouterProvider } from "react-router";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Auth from "./pages/Auth.jsx";
 
 function Layout({ children }) {
   return (
@@ -11,20 +11,24 @@ function Layout({ children }) {
       {children}
       <Footer />
     </>
-  )
+  );
 }
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Layout><Home /></Layout>,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
   },
   {
     path: "/auth",
     element: <Auth />,
   },
-])
+]);
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 }
