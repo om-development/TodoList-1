@@ -12,7 +12,7 @@ export default function Hero({ name = "User" }) {
             Welcome, {name}
           </h1>
           <p className="text-base-content/60 mt-1">
-            Stay organized and get things done.
+            Make your life easier by using it !!!
           </p>
         </div>
       </div>
